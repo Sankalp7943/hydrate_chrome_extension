@@ -18,9 +18,9 @@ console.log("Extension started ")
 console.log("Developed by Sankalp Sharma (http://www.sharmasankalp.com)")
 const delay = ms => new Promise(res => setTimeout(res, ms))
 const myDelay = async (interval) => {
-    console.log("waited!")
+    console.log("waiting!")
     await delay(interval)
-    console.log("waited!")
+    console.log("waiting!")
     return
   }
 
