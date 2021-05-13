@@ -17,17 +17,17 @@ console.log("Developed by Sankalp Sharma (http://www.sharmasankalp.com)")
 const delay = ms => new Promise(res => setTimeout(res, ms))
 const myDelay = async () => {
     console.log("waited!")
-    await delay(60000)
+    await delay(3600000)
     console.log("waited!")
     return
   }
 
 const notification = async()=>{
-    const interval = 60000
+    const interval = 3600000
     let timeLeft = 24*3600*1000//24hr for safe keeping
     while (timeLeft>0 && toggle.status)
     {   
-        await myDelay(60000)
+        await myDelay(3600000)
         timeLeft-=interval
         if (toggle.status == false){
             break
