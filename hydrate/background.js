@@ -5,7 +5,7 @@ const toggle = {
 const switchToggle = function setToggleFalse(toggle) {
     if (toggle.status === true) {
         chrome.browserAction.setIcon({
-            path : {
+            path: {
                 16: "icons/icon-gray16.png",
                 32: "icons/icon-gray32.png",
                 48: "icons/icon-gray48.png",
@@ -13,11 +13,11 @@ const switchToggle = function setToggleFalse(toggle) {
             }
         });
         toggle.status = false
-        console.log("Stopped extension");
-        alert("Stopped Hydrate!\nClick again to restart");
+        console.log("Stopped extension")
+        alert("Stopped Hydrate!\nClick again to restart")
     } else {
         chrome.browserAction.setIcon({
-            path : {
+            path: {
                 16: "icons/icon16.png",
                 32: "icons/icon32.png",
                 48: "icons/icon48.png",
@@ -25,8 +25,8 @@ const switchToggle = function setToggleFalse(toggle) {
             }
         });
         toggle.status = true
-        console.log("Restarted extension");
-        alert("Restarted Hydrate!\nClick again to stop");
+        console.log("Restarted extension")
+        alert("Restarted Hydrate!\nClick again to stop")
         notification()
     }
 }
