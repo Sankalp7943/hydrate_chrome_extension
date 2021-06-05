@@ -1,12 +1,14 @@
 {
     "name": "Hydrate",
-    "version": "1.0",
+    "version": "1.1",
     "manifest_version": 2,
     "description": "A chrome extension which reminds user every hour to get hydrated and fix their posture during long hours of Work From Home.",
-    "icons": { "16": "icons/icon16.png",
-            "32": "icons/icon32.png",
-            "48": "icons/icon48.png",
-            "128": "icons/icon128.png" },
+    "icons": {
+        "16": "icons/icon16.png",
+        "32": "icons/icon32.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    },
     "browser_action": {
         "default_title": "Hydrate"
     },
